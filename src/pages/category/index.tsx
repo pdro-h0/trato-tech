@@ -25,9 +25,9 @@ const Category = () => {
     return { category, itens };
   });
 
-  // useEffect(() => {
-  //   dispatch(fetchData());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(fetchData());
+  }, [dispatch]);
 
   if (!category) return;
  
